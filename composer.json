@@ -13,6 +13,24 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wunderkraut/migrate_source_example",
+                "version": "2.x-dev",
+                "type": "drupal-module",
+                "require": {
+                    "drupal/migrate_source_csv": "^2.0.0-rc2",
+                    "drupal/migrate_plus": "^3.0.0-beta1",
+                    "drupal/migrate_tools": "^3.0.0-beta1"
+                },
+                "source": {
+                    "url": "https://github.com/wunderkraut/migrate_source_example.git",
+                    "type": "git",
+                    "reference": "8.2.x"
+                }
+            }
         }
     ],
     "require": {
@@ -21,7 +39,10 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "wunderkraut/migrate_source_example": "2.x-dev",
+        "drupal/page_manager": "dev-1.x",
+        "drupal/panels": "^3.0@beta"
     },
     "require-dev": {
         "behat/mink": "~1.7",
