@@ -65,6 +65,15 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/core": {
+                "Exposed contextual filter in Views blocks (https://www.drupal.org/node/2287073)": "https://www.drupal.org/files/issues/2287073-148.patch",
+                "Token validation in Views (https://www.drupal.org/node/2780891)": "https://www.drupal.org/files/issues/views-ignore_invalid_tokens_in_replace-2780891-6-D8.1.x.patch"
+            },
+            "drupal/ctools": {
+                "Fix unserialization of blocks in page variant (https://www.drupal.org/node/2831521)": "https://www.drupal.org/files/issues/ctools-unserialize-plugin-collection-2831521-1.patch"
+            }
         }
     }
 }
