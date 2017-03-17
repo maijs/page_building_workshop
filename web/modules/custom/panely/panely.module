@@ -1,1 +1,25 @@
 <?php
+
+/**
+ * Implements hook_display_variant_plugin_alter().
+ *
+ * Switch default "panels_variant" class to custom variant that provides
+ * configuration for layout attributes.
+ */
+
+/*
+This function is disabled by default, but can be enabled if you want to
+add attributes to existing pages with default "panels_variant" page display
+variant.
+
+For attributes to apply on a layout template, the layout template needs to be
+modified to output attributes on the root element of the template. For example,
+see layout templates in custom theme "panely".
+*/
+/*
+function panely_display_variant_plugin_alter(&$definitions) {
+  if (isset($definitions['panels_variant']['class'])) {
+    $definitions['panels_variant']['class'] = 'Drupal\panely\Plugin\DisplayVariant\PanelsDisplayVariantWithAttributes';
+  }
+}
+*/
