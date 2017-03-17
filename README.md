@@ -24,7 +24,7 @@ cd page_building_workshop
 composer install
 ```
 
-Create Mysql Database.
+Create Mysql Database, if you want to use Mysql.
 
 ```
 mysql -u [USERNAME] -p -e "create database page_building_workshop"
@@ -37,6 +37,13 @@ Install Drupal using Mysql database.
 ```
 cd web
 drush site-install standard -y --account-name=admin --account-pass=admin1234 --db-url=mysql://[username]:[password]@[host]/page_building_workshop
+```
+
+Install Drupal using SQLite.
+
+```
+cd web
+drush site-install standard -y --account-name=admin --account-pass=admin1234 --db-url=sqlite://sites/default/files/ht.sqlite
 ```
 
 Enable `migrate_source_example_csv` module and migrate the content to have content to work with.
