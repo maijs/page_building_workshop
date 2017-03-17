@@ -1,0 +1,7 @@
+name: Panely
+type: theme
+description: Custom theme
+package: Other
+core: 8.x
+base theme: bartik
+
