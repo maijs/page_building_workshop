@@ -7,7 +7,7 @@ The goal of the workshop is to utilize Page manager and Panels to build pages in
 You should have the following installed on your system:
 
 - PHP and composer
-- Mysql
+- Mysql or SQLite
 
 ## Setup
 
